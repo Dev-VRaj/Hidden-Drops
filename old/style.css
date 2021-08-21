@@ -1,0 +1,258 @@
+body{
+    font-family: 'Solway', serif;
+    background-image: url(./Background/weather.png);
+    /* This pattern is downloaded from www.subtlepatterns.com  */
+}
+
+.headCard {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 90%;
+    height: auto;
+    border-radius: 5vw;
+    box-shadow: 2px 2px 10px 4px rgba(0, 132, 255, 0.25), -5px -5px 30px 7px rgba(0, 132, 255, 0.25);
+    transition: 0.4s;
+    background: rgb(0, 174, 255);
+  }
+
+   .headCard_title {
+    text-align: center;
+    font-family: 'Solway', serif;
+    font-weight: bold;
+    font-size: calc(15px + .5vw);
+    color: white;
+  }
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 1.5vw;
+    margin-bottom: 3vw;
+    width:  20vw;
+    min-width: 150px;
+    height: 25vw; /* 300px; */
+    min-height: 180px;
+    border-radius: 3vw;
+  box-shadow: 2px 2px 10px 4px rgba(0, 132, 255, 0.25), -5px -5px 30px 7px rgba(0, 132, 255, 0.25);
+  /* rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+    transition: 0.1s;
+  }
+
+  .card .card_image {
+    width: 20vw; /* 250px; */
+    min-width: 150px;
+    height: 25vw; /* 300px; */
+    min-height: 180px;
+  }
+  
+  .card .card_image img {
+    width: 20vw; /* 250px; */
+    min-width: 150px;
+    height: 25vw; /* 300px; */
+    min-height: 180px;
+    border-radius: 3vw;
+    object-fit: cover;
+    /* filter: brightness(80%); */
+  }
+  
+  .card .card_title {
+    text-align: left;
+    margin: 0;
+    margin-left: 3vw;
+    border-radius: 0 0 8vw 8vw;
+    font-family: 'Alatsi', sans-serif;
+    font-weight: bold;
+    font-size: calc(15px + 2.5vw);
+    margin-top: 0vw;
+    position: relative;
+  }
+
+  .unit {
+    text-align: left;
+    margin: 0;
+    margin-left: 3vw;
+    border-radius: 0vw 0vw 8vw 8vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: calc(5px + .5vw);
+    position: relative;
+    top: -5px;
+  }
+
+  .miniHead {
+    text-align: left;
+    margin: 0;
+    margin-left: 3vw;
+    border-radius: 0vw 0vw 8vw 8vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: calc(8px + 1.0vw);
+    margin-top: calc(-40px - 5.5vw);
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 black, 0px -1px 0 black, 1px 1px 1px rgba(0,0,0,0);
+  }
+  
+  .title-black {
+    color: black;
+    text-shadow: 1px 1px 0 rgb(182, 182, 182), 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px 0px 0 white, 0px 1px 0 white, -1px 0px 0 white, 0px -1px 0 white, 1px 1px 1px rgba(0,0,0,0); 
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      flex-direction: column;
+    }
+  }
+  
+  /* footer */
+  .footCard {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    height: 299px auto;
+    border-radius: 40px;
+  box-shadow: 2px 2px 10px 4px rgba(0, 132, 255, 0.25), -5px -5px 30px 7px rgba(0, 132, 255, 0.25);
+    transition: 0.4s;
+    background: rgb(0, 174, 255);
+  }
+
+  /* footer heading */
+   .footCard_about {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+    border-bottom:2px solid #2600ff; 
+    width: 40%; 
+    padding-bottom:5px; 
+    font-family: 'Solway', serif;
+    color: white;
+  }
+
+  /* paragraph in footer */
+  .meText {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+
+  /* social media buttons */
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 20px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-github {
+    background: #1F1E1E;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  #social{
+    width: 155px;
+    margin: auto;
+  }
+
+  form{
+    margin-top: 50px;
+    /* transition: all 4s ease-in-out; */
+}
+
+/* Review input */
+
+.control{
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Alatsi', sans-serif;
+  width: 40%;
+  margin: auto;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #2600ff;
+  color: white;
+  margin-bottom: 16px;
+  background:  rgb(0, 174, 255);
+}
+
+.more {
+  margin: auto;
+  margin-top: 20px;
+  width: 60%;
+  padding: 5px 10px 5px 10px;
+  text-align:center;
+  border-radius: 10vw;
+  outline: none;
+  background: rgb(0, 110, 255);
+  color: white;
+  font-family: 'Alatsi', sans-serif;
+  font-size: calc(20px + .5vw);
+  box-shadow: 1px 1px 5px 1px rgba(0, 132, 255, 0.25), -1px -1px 10px 1px rgba(0, 132, 255, 0.25);
+}
+
+.more:hover{
+  background-color: rgba(0, 110, 255, 0.616);
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+
+
+.button{
+  border-bottom: 0;
+}
+  
+form .submit{
+  background: #ff5722;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  font-family: 'Alatsi', sans-serif;
+  /* background-color: transparent; */
+  color: #fff;
+  font-size: calc(8px + .3vw);
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* height: calc(20px + 1.0vw); */
+  /* width: calc(50px + 3.0vw); */
+  /* margin-top: 20px; */
+  border-radius: 20px;
+}
+
+form .submit:hover{
+  background-color: #f44336;
+  cursor: pointer;
+}
